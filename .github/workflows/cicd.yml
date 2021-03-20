@@ -1,4 +1,4 @@
-name: ci
+name: ci-cd
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  cicd:
+  ci-cd:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -53,7 +53,7 @@ jobs:
         run: yarn run generate
 
       - name: Deploy
-        uses: peaceiris/actions-main@v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
           publish_dir: ./dist
