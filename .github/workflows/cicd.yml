@@ -1,4 +1,4 @@
-name: ci-cd
+name: github pages
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  ci-cd:
+  deploy:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -55,6 +55,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./dist
 
