@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Faspect-ratio\u002F_nuxt\u002Fstatic\u002F1616251487",layout:"default",error:a,serverRendered:true,routePath:"\u002F",config:{app:{basePath:"\u002Faspect-ratio\u002F",assetsPath:"\u002Faspect-ratio\u002F_nuxt\u002F",cdnURL:a}}}}(null));
