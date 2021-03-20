@@ -1,6 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/aspect-ratio/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -31,8 +34,24 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // https://github.com/nuxt-community/google-fonts-module#readme
+    '@nuxtjs/google-fonts'
   ],
+
+  // https://tailwindcss.nuxtjs.org/tailwind/config
+  tailwindcss: {
+    jit: true
+  },
+
+  // https://google-fonts.nuxtjs.org/options/
+  googleFonts: {
+    families: {
+      Inter: [400]
+    },
+    display: 'swap',
+    download: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
